@@ -1,0 +1,45 @@
+@import "blog-cards.css";
+
+/*navigation bar*/
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation li {
+  padding-right: 50px;
+}
+
+/*title box*/
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/background.jpg);
+  color: white;
+  height: 600px;
+  background-size: cover;
+  padding-top: 0;
+}
+
+/*blog post cards*/
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  grid-gap: 50px;
+}
+
+/*footer*/
+.fa-circle {
+  color: #e46594;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

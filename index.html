@@ -3,56 +3,49 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Unplugged</title>
+        <title>Lori and Lily</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-        <header>
-          <ul>
+        <header class="header">
+          <ul class="navigation">
             <li>Subscribe</li>
-            <li>Search</li>
+            <input type="text" placeholder="Search..">
+            <i class="fas fa-search"></i>
+          </ul>
+          <section class="title">
             <h1>Lori & Lily</h1>
             <h2>A DIY blog</h2>
-          </ul>
+          </section>
         </header>
-        <main>
-          <section class="blog-posts">
-            <div>
+        <main class="main">
+            <div class="card">
               <h3>Giraffe mural for Nursery</h3>
-              <img src="giraffe.jpg" alt="Giraffe peaking into crib mural">
+              <img src="img/giraffe.jpg" alt="Giraffe peaking into crib mural">
               <p>Make your own peeking into the crib giraffe mural for less than $10!</p>
             </div>
-            <div>
+            <div class="card">
               <h3>Floating Desk</h3>
-              <img src="deskl.jpg" alt="Floating desk">
+              <img src="img/desk.jpg" alt="Floating desk">
               <p>Make a floating desk for less than $50!</p>
             </div>
-            <div>
+            <div class="card">
               <h3>Star Mobile</h3>
-              <img src="star-wall.jpg" alt="Star mobile for crib">
+              <img src="img/star-wall.jpg" alt="Star mobile for crib">
               <p>Make a gold start mobile for your nursery!</p>
             </div>
-            <div>
+            <div class="card">
               <h3>Starry Night Feature Wall</h3>
-              <img src="star-mobile.jpg" alt="Starry Night feature wall">
+              <img src="img/star-mobile.jpg" alt="Starry Night feature wall">
               <p>Make a feature wall using star decals!</p>
             </div>
-          </section>
         </main>
-        <footer>
+        <footer class="footer">
           <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fab fa-facebook-f fa-stack-1x"></i>
@@ -66,19 +59,5 @@
             <i class="fab fa-instagram fa-stack-1x"></i>
           </span>
         </footer>
-
-        <!-- Add your site or application content here -->
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
 </html>
