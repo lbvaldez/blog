@@ -2,6 +2,10 @@
 @import "button.css";
 
 /*navigation bar*/
+.body {
+  font-size: 12px;
+}
+
 .navigation {
   list-style: none;
   display: flex;
@@ -50,10 +54,14 @@
 /*blog post cards*/
 .main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 50px;
   grid-gap: 50px;
   font-family: 'Lato', sans-serif;
+}
+
+.post-description {
+  padding: 15px;
 }
 
 /*footer*/
@@ -66,4 +74,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*Media queries*/
+@media only screen and (min-width: 600px) {
+  .body {
+    font-size: 16px;
+  }
+
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
