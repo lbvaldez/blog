@@ -1,7 +1,10 @@
 @import "blog-cards.css";
 @import "button.css";
+@import "blog-post.css";
+
 
 /*navigation bar*/
+
 .body {
   font-size: 12px;
 }
@@ -11,7 +14,7 @@
   display: flex;
   justify-content: flex-end;
   font-family: 'Lato', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #e46594;
   padding-right: 25px;
   font-weight: bold;
@@ -76,6 +79,7 @@
   align-items: center;
 }
 
+
 /*Media queries*/
 @media only screen and (min-width: 600px) {
   .body {
@@ -84,5 +88,10 @@
 
   .main {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .post-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
 }

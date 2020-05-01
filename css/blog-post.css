@@ -1,0 +1,35 @@
+
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1em;
+  padding-left: 50px;
+  margin-top: 15px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-pic {
+  width: 150px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #d3d3d3;
+  height: 210px;
+  text-align: center;
+  padding-right: 25px;
+}
+
+.post-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px;
+  grid-gap: 50px;
+  font-family: 'Lato', sans-serif;
+}
