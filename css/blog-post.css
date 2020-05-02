@@ -4,26 +4,41 @@
   font-size: 1em;
   padding-left: 50px;
   margin-top: 15px;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
 }
 
-.header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.link {
+  text-decoration: none;
+}
+
+.post-picture{
+  width: 75%;
+}
+.profile {
+  padding-left: 15px;
 }
 
 .profile-pic {
   width: 150px;
+  padding-left: 15px;
 }
 
 .wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
-  background-color: #d3d3d3;
-  height: 210px;
+  background-color: rgb(211,211,211, .4);
+  padding-right: 15px;
   text-align: center;
-  padding-right: 25px;
+  height: min-content;
+  padding-bottom: 15px;
 }
 
 .post-main {
@@ -32,4 +47,36 @@
   padding: 50px;
   grid-gap: 50px;
   font-family: 'Lato', sans-serif;
+}
+
+/*Media queries*/
+
+@media only screen and (min-width: 600px) {
+  .header-post {
+    grid-template-columns: 1fr 1fr;
+  }
+  .post-main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+
+  .header-post {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+}
+@media only screen and (min-width: 1150px) {
+
+  .post-main {
+    grid-template-columns: 2fr 1fr;
+  }
 }
